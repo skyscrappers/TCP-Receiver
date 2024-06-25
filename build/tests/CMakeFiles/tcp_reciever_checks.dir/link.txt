@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtcp_reciever_checks.a CMakeFiles/tcp_reciever_checks.dir/byte_stream_test_harness.cc.o
+/usr/bin/ranlib libtcp_reciever_checks.a

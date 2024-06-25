@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/recv_transmit.dir/recv_transmit.cc.o -o recv_transmit  libtcp_reciever_checks.a ../src/libtcp_reciever.a 

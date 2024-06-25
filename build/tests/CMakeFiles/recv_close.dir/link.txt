@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/recv_close.dir/recv_close.cc.o -o recv_close  libtcp_reciever_checks.a ../src/libtcp_reciever.a 
