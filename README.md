@@ -1,17 +1,17 @@
 # Background on TCP
-Generally when we want to retrieve a webpage or want to send an email to someone, the applications rely on a mechanism called Reliable Byte Stream to communicate between each
+Generally, when we want to retrieve a webpage or want to send an email to someone, the applications rely on a mechanism called Reliable Byte Stream to communicate with each
 other. Byte Stream is an essential abstraction for applications to send data or communicate with each other. A Reliable Byte Stream ensures that the bytes received at the receiver side are exactly
-the same and in the same order as sent by the sender. In reality however, the Internet doesn't provide a service of reliable byte-streams. Instead, the only thing the Internet really does is to give its “best effort” to deliver short pieces of
+the same and in the same order as sent by the sender. In reality, however, the Internet doesn't provide a service of reliable byte-streams. Instead, the only thing the Internet really does is to give its “best effort” to deliver short pieces of
 data, called Internet datagrams, to their destination. Each datagram contains some metadata (headers) that specifies things like the source and destination addresses—what computer system it came from, and what computer system it’s headed towards—as well as some payload
 data (up to about 1,500 bytes) to be delivered to the destination computer.
 The two systems have to cooperate with each other to make sure that the bytes in the stream
-eventually gets delivered, in the correct order to the correct destination on the other side. They
+eventually get delivered, in the correct order to the correct destination on the other side. They
 also have to tell each other how much data they are prepared to accept from the other system
-and make sure not to send more than the other side is wdilling to accept. All this is done using
+and make sure not to send more than the other side is willing to accept. All this is done using
 an agreed-upon scheme set down in 1981 called the Transmission Control Protocol or TCP.
 # Part I: Building ByteStream
-A ByteStream class, as the name itself suggests, is basically a container that stores a collection
-of bytes from which bytes can be read or written to. In the first part of the assignment, your goal
+A ByteStream class, as the name itself suggests, is a container that stores a collection
+of bytes from which bytes can be read or written. In the first part of the assignment, your goal
 will be to build a ByteStream class that will be used to represent a reliable byte stream.
 These are some of the properties of byte stream :
 1. Bytes are written on the input side and read out from the output side (use a data
